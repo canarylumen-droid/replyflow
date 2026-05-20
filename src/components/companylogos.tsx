@@ -32,7 +32,8 @@ export default function LogoCarousel() {
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-16 min-w-[140px] items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 text-center text-sm font-semibold text-white transition hover:border-[#A46EDB] hover:text-[#A46EDB]"
+                aria-label={"Open " + logo.alt + " (opens in new tab)"}
+                className="inline-flex h-16 min-w-[140px] items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 text-center text-sm font-semibold text-white transition hover:border-[#A46EDB] hover:text-[#A46EDB] pointer-events-auto"
               >
                 {logo.alt}
               </a>
@@ -42,7 +43,7 @@ export default function LogoCarousel() {
           </li>
         ))}
       </ul>
-      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll pointer-events-none" aria-hidden="true">
         {logos.map((logo, index) => (
           <li key={index}>
             {'href' in logo ? (
@@ -50,6 +51,8 @@ export default function LogoCarousel() {
                 href={logo.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-hidden="true"
+                tabIndex={-1}
                 className="inline-flex h-16 min-w-[140px] items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 text-center text-sm font-semibold text-white transition hover:border-[#A46EDB] hover:text-[#A46EDB]"
               >
                 {logo.alt}
