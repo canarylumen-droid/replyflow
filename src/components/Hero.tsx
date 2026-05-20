@@ -33,7 +33,7 @@ export const Hero = () => {
       </div>
       </div>
       <div className="flex justify-center">
-      <p className='text-xl text-center mt-8 max-w-md'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quod dicta, nisi autem dignissimos consequatur? Unde saepe eius nam. Minima at quaerat non quae qui consequatur hic nam neque earum.</p>
+      <p className='text-xl text-center mt-8 max-w-md'>Experience the next generation of product design with fast interactions, clean visuals, and seamless storytelling.</p>
       </div>
       <div className="flex justify-center mt-8">
       <button className='bg-white text-black py-3 px-5 rounded-lg font-medium'>Get for free</button>

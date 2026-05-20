@@ -26,6 +26,7 @@ export const Navbar = () => {
         <a href="#" className='text-opacity-60 text-white hover:text-opacity-100 transition'>Updates</a>
         <a href="#" className='text-opacity-60 text-white hover:text-opacity-100 transition'>Help</a>
         <a href="#" className='text-opacity-60 text-white hover:text-opacity-100 transition'>Customers</a>
+        <button className='border border-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium hover:border-white/40 transition mr-2'>Stories</button>
         <button className='bg-white py-2 px-4 rounded-lg text-black'>Get for free</button>
       </nav>
 
